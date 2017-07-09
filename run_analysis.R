@@ -1,10 +1,10 @@
 
 setwd("../")
-if (!file.exists("Get_Clean_Data_Course_Project"))
+if (!file.exists("GetCleanDataProject"))
 {
-  dir.create("Get_Clean_Data_Course_Project")
+  dir.create("GetCleanDataProject")
 }
-setwd("Get_Clean_Data_Course_Project")
+setwd("GetCleanDataProject")
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileurl, destfile = "dataprojectfiles.zip", method = "curl")
 unzip("dataprojectfiles.zip")
